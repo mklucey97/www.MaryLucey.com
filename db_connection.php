@@ -4,4 +4,6 @@ $username = "3684404_chatapp";
 $password = "6@[2SH:40#iwSl:2";
 $database = "3684404_chatapp";
 
+$conn = mysqli_connect($servername, $username, $password, $database);
+
 ?>
