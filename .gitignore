@@ -1,0 +1,19 @@
+# Ignore all files except those with the specified extensions
+*
+!*/
+!*.html
+!*.css
+!*.js
+!*.php
+!*.jpg
+!*.png
+!*.gif
+
+# Ignore all directories except the specified ones
+assets/
+images/
+css/
+js/
+
+# Unignore .gitignore file
+!.gitignore
