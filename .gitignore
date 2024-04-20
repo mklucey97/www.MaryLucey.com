@@ -10,10 +10,10 @@
 !*.gif
 
 # Ignore all directories except the specified ones
-assets/
 images/
 css/
 js/
 
-# Unignore .gitignore file
+# Unignore specific files
 !.gitignore
+!assets/jquery.min.js
