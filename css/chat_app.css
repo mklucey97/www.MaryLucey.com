@@ -32,3 +32,6 @@ button {
     padding: 10px 20px;
     cursor: pointer;
 }
+button:hover {
+    background-color: #1c6f8f;
+}
