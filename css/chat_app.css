@@ -54,3 +54,11 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+input[type="text"], input[type="username"], input[type="password"] {
+    background-color: #dc143c;
+    color: limegreen;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
