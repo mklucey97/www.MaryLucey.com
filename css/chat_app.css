@@ -65,3 +65,9 @@ input[type="text"], input[type="username"], input[type="password"] {
 button:hover {
     background-color: #1c6f8f;
 }
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
