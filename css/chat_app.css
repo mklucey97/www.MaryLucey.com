@@ -102,3 +102,6 @@ button {
     width: 100%;
     font-size: 16px; /* Ensure button text is readable on mobile */
 }
+button:hover {
+    background-color: #1c6f8f;
+}
