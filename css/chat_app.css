@@ -105,3 +105,13 @@ button {
 button:hover {
     background-color: #1c6f8f;
 }
+/* Media queries for larger screens */
+@media (min-width: 600px) {
+    body {
+        font-size: 18px; /* Increase base font size for larger screens */
+    }
+
+    button {
+        padding: 12px 24px;
+    }
+}
