@@ -36,82 +36,14 @@ button {
 button:hover {
     background-color: #1c6f8f;
 }
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    background: linear-gradient(100deg, red 50%, blue);
-    color: limegreen;
-    font-family: 'Comic Sans MS', cursive;
-    font-size: 24px;
-}
-.container {
-    width: 100%; /* Ensure the container spans the entire width */
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-}
-input[type="text"], input[type="username"], input[type="password"] {
-    background-color: #dc143c;
-    color: limegreen;
-    border: none;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-}
-button:hover {
-    background-color: #1c6f8f;
-}
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    background: linear-gradient(100deg, red 50%, blue);
-    color: limegreen;
-    font-family: 'Comic Sans MS', cursive;
-    font-size: 16px; /* Smaller base font size for mobile */
-    padding: 10px; /* Padding to ensure content doesn't touch screen edges */
-}
-.container {
-    width: 100%;
-    max-width: 400px; /* Maximum width for larger screens */
-    margin: 0 auto;
-    padding: 20px;
-}
-input[type="text"], input[type="username"], input[type="password"], input[type="email"], textarea {
-    background-color: #dc143c;
-    color: limegreen;
-    border: none;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    font-size: 16px; /* Ensure text is readable on mobile */
-}
-button {
-    background-color: #2a80a8;
-    color: limegreen;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px; /* Ensure button text is readable on mobile */
-}
-button:hover {
-    background-color: #1c6f8f;
-}
-/* Media queries for larger screens */
-@media (min-width: 600px) {
-    body {
-        font-size: 18px; /* Increase base font size for larger screens */
-    }
+/* chat_app.css */
 
-    button {
-        padding: 12px 24px;
-    }
+/* Apply a linear gradient background to the entire page */
+body {
+    background: linear-gradient(0deg, red 50%, blue 50%);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    color: #00ff1a;
+    margin: 0;
+    padding: 0;
 }
