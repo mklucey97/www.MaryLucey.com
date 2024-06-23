@@ -75,3 +75,12 @@ body {
     padding: 10px;
     cursor: pointer;
 }
+
+/* Style the other div elements */
+#messages,
+#welcome,
+#onlineUsers {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
