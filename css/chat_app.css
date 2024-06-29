@@ -36,18 +36,18 @@ button {
 button:hover {
     background-color: #1c6f8f;
 }
-/* chat_app.css */
-
-/* chat_app.css */
-
-/* Apply a linear gradient background to the entire page */
-body {
-    background: linear-gradient(0deg, red 50%, blue 50%);
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    font-size: 24px;
-    color: #00ff1a;
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(0deg, red 50%, blue 50%);
+    color: #00ff1a;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -57,11 +57,10 @@ body {
 #messageArea {
     background-color: #dc143c;
     padding: 20px;
-    box-sizing: border-box;
     width: 100%;
-    flex: 1;
     display: flex;
     flex-direction: column;
+    flex: 1;
     justify-content: space-between;
 }
 
@@ -79,8 +78,9 @@ body {
     box-sizing: border-box;
     font-size: 24px;
     margin-bottom: 10px;
-    flex: 1;
+    flex-grow: 1;
     resize: none;
+    height: calc(100vh - 200px); /* Adjust height to take up the full available space */
 }
 
 /* Style the send button */
