@@ -35,7 +35,6 @@ button {
 }
 button:hover {
     background-color: #1c6f8f;
-}
 /* Reset default styles */
 * {
     margin: 0;
@@ -60,8 +59,8 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    flex: 1;
-    justify-content: space-between;
+    flex-grow: 1;
+    justify-content: flex-end; /* Push the form to the bottom */
 }
 
 /* Style the form within the message area */
@@ -69,7 +68,6 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 /* Style the text area */
@@ -78,9 +76,9 @@ body {
     box-sizing: border-box;
     font-size: 24px;
     margin-bottom: 10px;
-    flex-grow: 1;
     resize: none;
-    height: calc(100vh - 200px); /* Adjust height to take up the full available space */
+    height: 100px; /* Ensure it's large initially */
+    flex-grow: 1; /* Allow it to grow */
 }
 
 /* Style the send button */
