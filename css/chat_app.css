@@ -35,6 +35,9 @@ button {
 }
 button:hover {
     background-color: #1c6f8f;
+}
+
+
 /* Reset default styles */
 * {
     margin: 0;
@@ -42,14 +45,18 @@ button:hover {
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background: linear-gradient(0deg, red 50%, blue 50%);
     color: #00ff1a;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 24px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 /* Style the message area */
