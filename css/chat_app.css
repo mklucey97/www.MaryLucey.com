@@ -14,3 +14,10 @@ body {
     height: 100vh;
     text-align: center;
 }
+
+/* Form styles */
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
