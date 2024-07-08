@@ -59,3 +59,16 @@ button {
         padding: 12px;
     }
 }
+@media (max-width: 480px) {
+    body {
+        font-size: 18px;
+    }
+
+    input {
+        padding: 6px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
