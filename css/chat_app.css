@@ -14,31 +14,26 @@ body {
 }
 
 /* Form styles */
-form {
+#messageArea {
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-label {
-    display: block;
-    margin: 10px 0 5px;
-}
-input, textarea {
+form {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    border: 2px solid #000;
-    background-color: #dc143c;
-    color: limegreen;
-    font-size: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 400px;
 }
 textarea {
     flex-grow: 1;
-    height: calc(100% - 55px); /* Adjust based on other elements in the form */
+    height: calc(100% - 55px); /* Adjust based on the button height */
+    margin-bottom: 0; /* Remove bottom margin to avoid extra space */
 }
 button {
     width: 100%;
@@ -48,6 +43,7 @@ button {
     font-size: 24px;
     border: none;
     cursor: pointer;
+    flex-shrink: 0; /* Prevent the button from shrinking */
 }
 
 /* Responsive styles */
@@ -77,4 +73,3 @@ button {
         padding: 10px;
     }
 }
-
