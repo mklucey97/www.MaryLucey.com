@@ -21,6 +21,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #dc143c; /* Apply the background color */
+    padding: 0 10px; /* Add padding to ensure content does not touch the edges */
 }
 form {
     width: 100%;
@@ -28,7 +30,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 400px;
+    max-width: none; /* Remove max-width to stretch across the page */
 }
 textarea {
     flex-grow: 1;
