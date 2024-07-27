@@ -11,32 +11,28 @@ body {
     justify-content: center;
     height: 100vh;
     text-align: center;
+    padding: 0;
 }
 
 /* Form styles */
-#messageArea {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #dc143c; /* Apply the background color */
-    padding: 0 10px; /* Add padding to ensure content does not touch the edges */
-}
 form {
     width: 100%;
-    height: 100%;
+    max-width: 600px; /* Set a maximum width for better aesthetics on larger screens */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    max-width: none; /* Remove max-width to stretch across the page */
+    align-items: stretch; /* Ensure the form stretches */
+    padding: 0 20px; /* Add padding to ensure the inputs don't touch the edges */
+    box-sizing: border-box; /* Include padding in the element's width and height */
 }
-textarea {
-    flex-grow: 1;
-    height: calc(100% - 55px); /* Adjust based on the button height */
-    margin-bottom: 0; /* Remove bottom margin to avoid extra space */
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px; /* Add padding for better usability */
+    margin: 10px 0; /* Add some margin to separate the inputs */
+    font-size: 18px; /* Set a comfortable font size */
+    box-sizing: border-box; /* Include padding in the element's width */
 }
+
 button {
     width: 100%;
     padding: 15px;
@@ -45,7 +41,7 @@ button {
     font-size: 24px;
     border: none;
     cursor: pointer;
-    flex-shrink: 0; /* Prevent the button from shrinking */
+    margin-top: 10px; /* Add some margin to separate the button from the inputs */
 }
 
 /* Responsive styles */
@@ -54,8 +50,8 @@ button {
         font-size: 20px;
     }
 
-    input, textarea {
-        padding: 8px;
+    input[type="text"], input[type="password"], input[type="email"], button {
+        font-size: 20px;
     }
 
     button {
@@ -67,8 +63,8 @@ button {
         font-size: 18px;
     }
 
-    input, textarea {
-        padding: 6px;
+    input[type="text"], input[type="password"], input[type="email"], button {
+        font-size: 18px;
     }
 
     button {
