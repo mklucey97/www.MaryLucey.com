@@ -9,39 +9,38 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh; /* Use min-height instead of height to ensure content is not cut off */
     text-align: center;
     padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 /* Form styles */
 form {
     width: 100%;
-    max-width: 600px; /* Set a maximum width for better aesthetics on larger screens */
+    max-width: 100%; /* Ensure the form stretches across the entire page */
+    padding: 0 20px; /* Optional: Add padding if needed for aesthetics */
+    box-sizing: border-box; /* Include padding in the width */
     display: flex;
     flex-direction: column;
-    align-items: stretch; /* Ensure the form stretches */
-    padding: 0 20px; /* Add padding to ensure the inputs don't touch the edges */
-    box-sizing: border-box; /* Include padding in the element's width and height */
+    align-items: center; /* Center align the form elements */
 }
 
-input[type="text"], input[type="password"], input[type="email"] {
+input[type="text"], input[type="password"], input[type="email"], button {
     width: 100%;
+    max-width: 600px; /* Optional: Add a max-width for better design on large screens */
     padding: 10px; /* Add padding for better usability */
-    margin: 10px 0; /* Add some margin to separate the inputs */
+    margin: 10px 0; /* Add some margin to separate the inputs and button */
     font-size: 18px; /* Set a comfortable font size */
     box-sizing: border-box; /* Include padding in the element's width */
 }
 
 button {
-    width: 100%;
-    padding: 15px;
     background-color: #077ce3;
     color: limegreen;
-    font-size: 24px;
     border: none;
     cursor: pointer;
-    margin-top: 10px; /* Add some margin to separate the button from the inputs */
+    font-size: 24px;
 }
 
 /* Responsive styles */
