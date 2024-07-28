@@ -1,80 +1,56 @@
-/* General styles */
+/* chat_app.css */
+
 body {
     margin: 0;
-    font-family: 'Comic Sans MS', sans-serif;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 24px;
     color: limegreen;
-    background: linear-gradient(180deg, red 0%, red 50%, blue 50%, blue 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    background: linear-gradient(90deg, red 50%, blue 50%);
     text-align: center;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-/* Form styles */
+h2 {
+    margin-top: 20px;
+}
+
 form {
-    width: 100%;
-    max-width: 100%;
-    padding: 0; /* Ensure form stretches across the page without additional padding */
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+label {
+    margin-top: 10px;
 }
 
 input[type="text"], input[type="password"], input[type="email"] {
-    width: 100%;
-    max-width: none; /* Remove any max-width to ensure full stretch */
+    width: calc(100% - 40px); /* Subtracting padding */
+    max-width: 500px;
     padding: 10px;
-    margin: 10px 0;
-    font-size: 18px;
-    box-sizing: border-box;
-    background-color: #dc143c; /* Set background color */
-    border: 1px solid limegreen; /* Optional: Add border for better visibility */
-    color: white; /* Set text color to white for contrast */
-}
-
-button {
-    width: 100%;
-    max-width: none; /* Ensure the button also stretches fully */
-    padding: 15px;
-    background-color: #077ce3;
+    margin-top: 5px;
+    background-color: #dc143c;
+    border: 2px solid limegreen;
     color: limegreen;
     font-size: 24px;
-    border: none;
+    border-radius: 5px;
+}
+
+button[type="button"] {
+    width: calc(100% - 40px);
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: cyan;
+    border: 2px solid limegreen;
+    color: limegreen;
+    font-size: 24px;
     cursor: pointer;
-    margin-top: 10px;
-    box-sizing: border-box;
+    border-radius: 5px;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    body {
-        font-size: 20px;
-    }
-
-    input[type="text"], input[type="password"], input[type="email"], button {
-        font-size: 20px;
-    }
-
-    button {
-        padding: 12px;
-    }
-}
-@media (max-width: 480px) {
-    body {
-        font-size: 18px;
-    }
-
-    input[type="text"], input[type="password"], input[type="email"], button {
-        font-size: 18px;
-    }
-
-    button {
-        padding: 10px;
-    }
+button[type="button"]:hover {
+    opacity: 0.8;
 }
