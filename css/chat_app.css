@@ -9,38 +9,46 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Use min-height instead of height to ensure content is not cut off */
+    min-height: 100vh;
     text-align: center;
     padding: 0;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box;
 }
 
 /* Form styles */
 form {
     width: 100%;
-    max-width: 100%; /* Ensure the form stretches across the entire page */
-    padding: 0 20px; /* Optional: Add padding if needed for aesthetics */
-    box-sizing: border-box; /* Include padding in the width */
+    max-width: 100%;
+    padding: 0; /* Ensure form stretches across the page without additional padding */
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align the form elements */
+    align-items: center;
 }
 
-input[type="text"], input[type="password"], input[type="email"], button {
+input[type="text"], input[type="password"], input[type="email"] {
     width: 100%;
-    max-width: 600px; /* Optional: Add a max-width for better design on large screens */
-    padding: 10px; /* Add padding for better usability */
-    margin: 10px 0; /* Add some margin to separate the inputs and button */
-    font-size: 18px; /* Set a comfortable font size */
-    box-sizing: border-box; /* Include padding in the element's width */
+    max-width: none; /* Remove any max-width to ensure full stretch */
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    background-color: #dc143c; /* Set background color */
+    border: 1px solid limegreen; /* Optional: Add border for better visibility */
+    color: white; /* Set text color to white for contrast */
 }
 
 button {
+    width: 100%;
+    max-width: none; /* Ensure the button also stretches fully */
+    padding: 15px;
     background-color: #077ce3;
     color: limegreen;
+    font-size: 24px;
     border: none;
     cursor: pointer;
-    font-size: 24px;
+    margin-top: 10px;
+    box-sizing: border-box;
 }
 
 /* Responsive styles */
