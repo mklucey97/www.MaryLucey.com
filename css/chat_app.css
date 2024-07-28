@@ -54,3 +54,59 @@ button[type="button"] {
 button[type="button"]:hover {
     opacity: 0.8;
 }
+/* chat_app.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    color: limegreen;
+    background: linear-gradient(90deg, red 50%, blue 50%);
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 40px); /* Subtracting padding */
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #dc143c;
+    border: 2px solid limegreen;
+    color: limegreen;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+button[type="button"] {
+    width: calc(100% - 40px);
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: cyan;
+    border: 2px solid limegreen;
+    color: limegreen;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="button"]:hover {
+    opacity: 0.8;
+}
