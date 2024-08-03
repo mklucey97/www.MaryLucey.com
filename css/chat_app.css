@@ -110,3 +110,18 @@ button[type="button"] {
 button[type="button"]:hover {
     opacity: 0.8;
 }
+/* General styles for the entire page */
+body {
+    background-color: rgb(100%, 0%, 50%);
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 24px;
+    color: limegreen;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
