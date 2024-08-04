@@ -160,3 +160,14 @@ body {
     display: flex;
     flex-direction: column;
 }
+/* Flexbox to manage layout on larger screens */
+@media (min-width: 768px) {
+    body {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #messageArea {
+        width: 60%;
+    }
+}
