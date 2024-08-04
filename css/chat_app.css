@@ -130,3 +130,15 @@ body {
     width: 100%;
     padding: 20px;
 }
+/* Styles for the message input area */
+#messageInput {
+    width: 100%;
+    height: calc(100vh - 120px); /* Adjust height as needed */
+    background-color: #dc143c;
+    color: limegreen;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 24px;
+    resize: none;
+}
