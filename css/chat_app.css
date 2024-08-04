@@ -153,3 +153,10 @@ body {
     cursor: pointer;
     box-sizing: border-box;
 }
+
+/* Ensure the form takes up the entire width */
+#mainChatArea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
