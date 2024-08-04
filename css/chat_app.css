@@ -142,3 +142,14 @@ body {
     font-size: 24px;
     resize: none;
 }
+/* Styles for the send button */
+#sendBtn {
+    width: 100%;
+    background-color: #2bbfe0;
+    color: limegreen;
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
