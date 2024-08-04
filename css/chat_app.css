@@ -171,3 +171,10 @@ body {
         width: 60%;
     }
 }
+
+h2 {
+font-family: 'Comic Sans MS', sans-serif;
+font-size: 24px;
+color: limegreen;
+text-align: center;
+}
