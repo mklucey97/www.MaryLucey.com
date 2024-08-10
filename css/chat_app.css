@@ -178,3 +178,16 @@ font-size: 24px;
 color: limegreen;
 text-align: center;
 }
+/* General styles for the entire page */
+body {
+    background-color: rgb(100%, 0%, 50%);
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 24px;
+    color: limegreen;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
