@@ -235,3 +235,14 @@ textarea {
     background-color: #dc143c;
     color: limegreen;
 }
+/* Button styling */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #2bbfe0;
+    color: limegreen;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
