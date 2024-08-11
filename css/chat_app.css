@@ -230,3 +230,8 @@ textarea {
 #username {
     background-color: #dc143c;
 }
+#message {
+    height: 100px;
+    background-color: #dc143c;
+    color: limegreen;
+}
