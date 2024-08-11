@@ -198,3 +198,10 @@ body {
     box-sizing: border-box;
     text-align: center;
 }
+/* Chat window styling */
+#chat-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
