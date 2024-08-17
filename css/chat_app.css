@@ -112,94 +112,28 @@ button[type="button"]:hover {
 }
 /* General styles for the entire page */
 body {
-    background-color: rgb(100%, 0%, 50%);
-    font-family: 'Comic Sans MS', sans-serif;
-    font-size: 24px;
-    color: limegreen;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    color: limegreen;
+    background: linear-gradient(90deg, red 50%, blue 50%);
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    min-height: 100vh;
-}
-/* Styles for the message area */
-#messageArea {
-    width: 100%;
-    padding: 20px;
-}
-/* Styles for the message input area */
-#messageInput {
-    width: 100%;
-    height: calc(100vh - 120px); /* Adjust height as needed */
-    background-color: #dc143c;
-    color: limegreen;
-    border: none;
-    padding: 10px;
-    box-sizing: border-box;
-    font-size: 24px;
-    resize: none;
-}
-/* Styles for the send button */
-#sendBtn {
-    width: 100%;
-    background-color: #2bbfe0;
-    color: limegreen;
-    border: none;
-    padding: 15px;
-    font-size: 24px;
-    cursor: pointer;
-    box-sizing: border-box;
-}
-
-/* Ensure the form takes up the entire width */
-#mainChatArea {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-/* Flexbox to manage layout on larger screens */
-@media (min-width: 768px) {
-    body {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    #messageArea {
-        width: 60%;
-    }
-}
-
-h2 {
-font-family: 'Comic Sans MS', sans-serif;
-font-size: 24px;
-color: limegreen;
-text-align: center;
-}
-/* General styles for the entire page */
-body {
-    background-color: rgb(100%, 0%, 50%);
-    font-family: 'Comic Sans MS', sans-serif;
-    font-size: 24px;
-    color: limegreen;
-    margin: 0;
-    padding: 0;
-    display: flex;
     align-items: center;
-    justify-content: center;
     height: 100vh;
+    box-sizing: border-box;
 }
+
 /* Ensure the container takes up the entire width and height */
 .container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
 }
 
@@ -207,7 +141,6 @@ body {
 #chat-window {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
     height: 100%;
 }
@@ -215,7 +148,7 @@ body {
 /* Chat messages styling */
 #chat-messages {
     width: 100%;
-    height: calc(100% - 210px); /* Adjust height for other elements */
+    flex-grow: 1;
     overflow-y: scroll;
     background-color: white;
     margin-bottom: 10px;
@@ -232,17 +165,20 @@ textarea {
     font-size: 24px;
     border: none;
     background-color: #dc143c;
+    color: limegreen;
     box-sizing: border-box;
 }
 
 #username {
+    height: 60px; /* Adjust height as needed */
     background-color: #dc143c;
 }
 
 #message {
-    height: 200px; /* Increase height for larger message area */
+    flex-grow: 1;
     background-color: #dc143c;
     color: limegreen;
+    resize: none;
 }
 
 /* Button styling */
