@@ -1,4 +1,73 @@
 /* chat_app.css */
+
+/* Apply a linear gradient background */
+body {
+    background: linear-gradient(to bottom, red 50%, blue 50%);
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 24px;
+    color: limegreen;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the form */
+form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style for the input fields */
+input[type="text"], 
+input[type="password"], 
+input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: #dc143c;
+    border: none;
+    border-radius: 5px;
+    color: limegreen;
+    font-size: 18px;
+}
+
+/* Style for the sign-up button */
+#signupBtn {
+    width: 100%;
+    padding: 15px;
+    background-color: cyan;
+    border: none;
+    border-radius: 5px;
+    color: limegreen;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#signupBtn:hover {
+    background-color: #00ffff; /* Slightly darker cyan on hover */
+}
+
+/* Style for the message div */
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+/* chat_app.css */
 /* General styles for the entire page */
 body {
     margin: 0;
