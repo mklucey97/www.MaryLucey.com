@@ -116,9 +116,9 @@ input[type="password"] {
     background-color: #00ffff; /* Slightly darker cyan on hover */
 }
 
+/* chat_app.css */
 
-/* Updated CSS for Main Chat */
-
+/* Apply a linear gradient background */
 body {
     background: linear-gradient(to bottom, red 50%, blue 50%);
     font-family: 'Comic Sans MS', sans-serif;
@@ -130,10 +130,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    box-sizing: border-box;
 }
 
-/* Ensure the message area takes up the entire width and height */
+/* Ensure the container takes up the entire width and height */
 #messageArea {
     width: 100%;
     height: 100%;
@@ -163,103 +162,15 @@ body {
     color: limegreen;
     border: none;
     resize: none;
-    width: 100%;
-    height: 100%; /* Ensures the textarea takes up the full height */
     box-sizing: border-box;
+    height: calc(100% - 60px); /* Takes up the full height minus the button's height */
+    width: 100%;
 }
 
 /* Button styling */
 #sendBtn {
     width: 100%;
-    padding: 20px;
-    background-color: #2bbfe0;
-    color: limegreen;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    box-sizing: border-box;
     height: 60px; /* Adjust the button height as needed */
-}
-
-
-
-
-
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    font-size: 24px;
-    color: limegreen;
-    background: linear-gradient(90deg, red 50%, blue 50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    box-sizing: border-box;
-}
-
-/* Ensure the container takes up the entire width and height */
-.container {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-}
-
-/* Chat window styling */
-#chat-window {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
-
-/* Chat messages styling */
-#chat-messages {
-    width: 100%;
-    flex-grow: 1;
-    overflow-y: scroll;
-    background-color: white;
-    margin-bottom: 10px;
-    border: 2px solid limegreen;
-    box-sizing: border-box;
-}
-
-/* Input and textarea styling */
-input[type="text"],
-textarea {
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 10px;
-    font-size: 24px;
-    border: none;
-    background-color: #dc143c;
-    color: limegreen;
-    box-sizing: border-box;
-}
-
-#username {
-    height: 60px; /* Adjust height as needed */
-    background-color: #dc143c;
-}
-
-#message {
-    flex-grow: 1;
-    background-color: #dc143c;
-    color: limegreen;
-    resize: none;
-}
-
-/* Button styling */
-button {
-    width: 100%;
-    padding: 20px;
     background-color: #2bbfe0;
     color: limegreen;
     border: none;
