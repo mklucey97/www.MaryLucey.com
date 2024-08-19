@@ -116,65 +116,75 @@ input[type="password"] {
     background-color: #00ffff; /* Slightly darker cyan on hover */
 }
 
-/* chat_app.css */
+/* Mobile First CSS */
 
-/* Apply a linear gradient background */
-body {
-    background: linear-gradient(to bottom, red 50%, blue 50%);
-    font-family: 'Comic Sans MS', sans-serif;
-    font-size: 24px;
-    color: limegreen;
+body, html {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Ensure the container takes up the entire width and height */
-#messageArea {
-    width: 100%;
     height: 100%;
+    font-family: 'Comic Sans MS', sans-serif;
+    background: linear-gradient(0deg, rgb(255, 0, 0) 50%, rgb(0, 0, 255) 50%);
+    color: limegreen;
+    font-size: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Form styling */
+h1 {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#messageArea {
+    width: 100%;
+    height: calc(100% - 60px); /* Adjust for heading */
+    display: flex;
+    flex-direction: column;
+}
+
 #mainChatArea {
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Textarea styling */
-#messageInput {
-    flex-grow: 1;
-    padding: 20px;
-    font-size: 24px;
-    background-color: #dc143c;
-    color: limegreen;
-    border: none;
-    resize: none;
-    box-sizing: border-box;
-    height: calc(100% - 60px); /* Takes up the full height minus the button's height */
     width: 100%;
 }
 
-/* Button styling */
+#messageInput {
+    flex: 1;
+    width: 100%;
+    background-color: #dc143c;
+    border: none;
+    color: limegreen;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 24px;
+}
+
 #sendBtn {
     width: 100%;
-    height: 60px; /* Adjust the button height as needed */
-    background-color: #2bbfe0;
-    color: limegreen;
+    background-color: cyan;
     border: none;
+    color: limegreen;
+    padding: 15px;
     font-size: 24px;
     cursor: pointer;
-    box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+    body, html {
+        font-size: 24px;
+    }
+    
+    #messageArea {
+        width: 80%;
+    }
+    
+    #sendBtn {
+        padding: 20px;
+    }
 }
