@@ -121,8 +121,6 @@ input[type="password"] {
     margin-top: 20px;
     font-size: 18px;
 }
-
-
 /* General styles for the entire page */
 body {
     margin: 0;
@@ -142,7 +140,6 @@ body {
 #messageArea {
     width: 100%;
     height: 100%;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -153,8 +150,10 @@ body {
 #mainChatArea {
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -167,15 +166,15 @@ body {
     color: limegreen;
     border: none;
     resize: none;
-    box-sizing: border-box;
-    height: calc(100% - 60px); /* Takes up the height minus the button's height */
     width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 /* Button styling */
 #sendBtn {
     width: 100%;
-    height: 60px;
+    height: 60px;  /* Adjust the button height as needed */
     background-color: #2bbfe0;
     color: limegreen;
     border: none;
@@ -183,8 +182,6 @@ body {
     cursor: pointer;
     box-sizing: border-box;
 }
-
-
 
 
 
