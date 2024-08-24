@@ -115,6 +115,10 @@ input[type="password"] {
 #loginBtn:hover {
     background-color: #00ffff; /* Slightly darker cyan on hover */
 }
+
+
+/* chat_app.css */
+
 /* Apply a linear gradient background */
 body {
     background: linear-gradient(90deg, red 50%, blue 50%);
@@ -123,9 +127,9 @@ body {
     color: limegreen;
     margin: 0;
     padding: 0;
+    height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Full viewport height */
     box-sizing: border-box;
 }
 
@@ -134,15 +138,16 @@ h1 {
     text-align: center;
     margin: 0;
     padding: 10px;
+    flex-shrink: 0; /* Ensure the heading doesn't shrink */
 }
 
-/* Style the message area to take up full space */
+/* Ensure the message area takes up the full remaining space */
 #messageArea {
+    flex: 1; /* Allow the message area to grow and fill the space */
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    box-sizing: border-box;
 }
 
 /* Style the form to take up full space of its container */
@@ -156,7 +161,7 @@ h1 {
 
 /* Style the text area to take up most of the vertical space */
 #messageInput {
-    flex-grow: 1;
+    flex: 1; /* Grow to fill available space */
     background-color: #dc143c;
     color: limegreen;
     border: none;
@@ -165,7 +170,6 @@ h1 {
     box-sizing: border-box;
     resize: none;
     width: 100%;
-    height: 90%; /* Take up 90% of the height */
 }
 
 /* Style the send button to stretch across horizontally */
@@ -178,12 +182,8 @@ h1 {
     cursor: pointer;
     width: 100%;
     box-sizing: border-box;
-    height: 10%; /* Take up 10% of the height */
-}
-
-/* Ensure the send button does not shrink */
-#sendBtn {
-    flex-shrink: 0;
+    height: 60px; /* Fixed height to ensure the button doesn't shrink too much */
+    flex-shrink: 0; /* Prevent the button from shrinking */
 }
 
 /* Add responsive adjustments for larger screens */
@@ -194,5 +194,6 @@ h1 {
 
     #sendBtn {
         font-size: 28px;
+        height: 70px; /* Adjust button height for larger screens */
     }
 }
