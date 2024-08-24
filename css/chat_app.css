@@ -150,3 +150,16 @@ h1 {
     flex-direction: column;
     height: 100%;
 }
+
+/* Style the text area to take up most of the vertical space */
+#messageInput {
+    flex-grow: 1;
+    background-color: #dc143c;
+    color: limegreen;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    box-sizing: border-box;
+    resize: none;
+    width: 100%;
+}
