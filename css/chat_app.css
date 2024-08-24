@@ -116,7 +116,6 @@ input[type="password"] {
     background-color: #00ffff; /* Slightly darker cyan on hover */
 }
 
-
 /* Ensure mobile-first design with viewport settings */
 body {
     margin: 0;
@@ -130,12 +129,14 @@ body {
     height: 100vh; /* 100% of the viewport height */
     box-sizing: border-box;
 }
+
 /* Style the main chat room heading */
 h1 {
     text-align: center;
     margin: 0;
     padding: 10px;
 }
+
 /* Message area should take all remaining vertical space */
 #messageArea {
     flex-grow: 1;
@@ -149,21 +150,24 @@ h1 {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
 }
 
-/* Style the text area to take up most of the vertical space */
+/* Style the text area to take up most of the vertical space and be enlarged */
 #messageInput {
     flex-grow: 1;
     background-color: #dc143c;
     color: limegreen;
     border: none;
-    padding: 10px;
+    padding: 20px;
     font-size: 24px;
     box-sizing: border-box;
     resize: none;
     width: 100%;
+    height: 80%; /* Adjusted to take up significant vertical space */
 }
-/* Style the send button to take up remaining space at the bottom */
+
+/* Style the send button to be enlarged and stretch across horizontally */
 #sendBtn {
     background-color: cyan;
     color: limegreen;
@@ -173,11 +177,14 @@ h1 {
     cursor: pointer;
     width: 100%;
     box-sizing: border-box;
+    height: 20%; /* Adjusted to take up remaining vertical space */
 }
+
 /* Ensure the send button does not shrink */
 #sendBtn {
     flex-shrink: 0;
 }
+
 /* Add responsive adjustments for larger screens */
 @media (min-width: 768px) {
     #messageInput {
