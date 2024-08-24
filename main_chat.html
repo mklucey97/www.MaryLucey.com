@@ -7,13 +7,13 @@
     <meta name="description" content="Your Description Here">
     <meta name="Author" content="Your Name Here">
     <title>Main Chat</title>
-	<h1>Main Chat Room</h1>
     <link rel="stylesheet" href="css/chat_app.css">
 </head>
 <body>
+    <h1>Main Chat Room</h1>
     <div id="messageArea">
         <form id="mainChatArea" action="main_chat.php" method="post">
-            <textarea id="messageInput" placeholder="Type your message here"></textarea>
+            <textarea id="messageInput" placeholder="Type your message here" maxlength="5000000"></textarea>
             <button id="sendBtn">Send</button>
         </form>
     </div>
