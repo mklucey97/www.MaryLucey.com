@@ -178,3 +178,13 @@ h1 {
 #sendBtn {
     flex-shrink: 0;
 }
+/* Add responsive adjustments for larger screens */
+@media (min-width: 768px) {
+    #messageInput {
+        font-size: 28px;
+    }
+
+    #sendBtn {
+        font-size: 28px;
+    }
+}
