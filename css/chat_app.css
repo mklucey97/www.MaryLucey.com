@@ -163,3 +163,14 @@ h1 {
     resize: none;
     width: 100%;
 }
+/* Style the send button to take up remaining space at the bottom */
+#sendBtn {
+    background-color: cyan;
+    color: limegreen;
+    border: none;
+    padding: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
