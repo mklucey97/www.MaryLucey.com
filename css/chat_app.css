@@ -115,18 +115,17 @@ input[type="password"] {
 #loginBtn:hover {
     background-color: #00ffff; /* Slightly darker cyan on hover */
 }
-
-/* Ensure mobile-first design with viewport settings */
+/* Apply a linear gradient background */
 body {
-    margin: 0;
-    padding: 0;
+    background: linear-gradient(90deg, red 50%, blue 50%);
     font-family: 'Comic Sans MS', sans-serif;
     font-size: 24px;
     color: limegreen;
-    background: linear-gradient(90deg, red 50%, blue 50%);
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh; /* 100% of the viewport height */
+    height: 100vh; /* Full viewport height */
     box-sizing: border-box;
 }
 
@@ -137,24 +136,25 @@ h1 {
     padding: 10px;
 }
 
-/* Message area should take all remaining vertical space */
+/* Style the message area to take up full space */
 #messageArea {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    padding: 0; /* Remove padding to ensure full width */
-    width: 100%; /* Ensure full width */
+    flex-grow: 1;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
 }
 
-/* Style the form to stretch across the available space */
+/* Style the form to take up full space of its container */
 #mainChatArea {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+    box-sizing: border-box;
 }
 
-/* Style the text area to take up most of the vertical space and be enlarged */
+/* Style the text area to take up most of the vertical space */
 #messageInput {
     flex-grow: 1;
     background-color: #dc143c;
@@ -165,10 +165,10 @@ h1 {
     box-sizing: border-box;
     resize: none;
     width: 100%;
-    height: 90%; /* Adjusted to take up significant vertical space */
+    height: 90%; /* Take up 90% of the height */
 }
 
-/* Style the send button to be enlarged and stretch across horizontally */
+/* Style the send button to stretch across horizontally */
 #sendBtn {
     background-color: cyan;
     color: limegreen;
@@ -178,7 +178,7 @@ h1 {
     cursor: pointer;
     width: 100%;
     box-sizing: border-box;
-    height: 10%; /* Adjusted to take up remaining vertical space */
+    height: 10%; /* Take up 10% of the height */
 }
 
 /* Ensure the send button does not shrink */
