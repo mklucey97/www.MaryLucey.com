@@ -116,75 +116,17 @@ input[type="password"] {
     background-color: #00ffff; /* Slightly darker cyan on hover */
 }
 
-/* Mobile First CSS */
 
-body, html {
+/* Ensure mobile-first design with viewport settings */
+body {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: 'Comic Sans MS', sans-serif;
-    background: linear-gradient(0deg, rgb(255, 0, 0) 50%, rgb(0, 0, 255) 50%);
-    color: limegreen;
     font-size: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-h1 {
-    text-align: center;
-    width: 100%;
-    margin: 20px 0;
-}
-
-#messageArea {
-    width: 100%;
-    height: calc(100% - 60px); /* Adjust for heading */
-    display: flex;
-    flex-direction: column;
-}
-
-#mainChatArea {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-
-#messageInput {
-    flex: 1;
-    width: 100%;
-    background-color: #dc143c;
-    border: none;
     color: limegreen;
-    padding: 10px;
+    background: linear-gradient(180deg, red 100%, blue 50%);
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 100% of the viewport height */
     box-sizing: border-box;
-    resize: none;
-    font-size: 24px;
-}
-
-#sendBtn {
-    width: 100%;
-    background-color: cyan;
-    border: none;
-    color: limegreen;
-    padding: 15px;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* Responsive adjustments */
-@media (min-width: 600px) {
-    body, html {
-        font-size: 24px;
-    }
-    
-    #messageArea {
-        width: 80%;
-    }
-    
-    #sendBtn {
-        padding: 20px;
-    }
 }
