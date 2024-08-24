@@ -174,3 +174,7 @@ h1 {
     width: 100%;
     box-sizing: border-box;
 }
+/* Ensure the send button does not shrink */
+#sendBtn {
+    flex-shrink: 0;
+}
