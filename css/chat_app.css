@@ -143,3 +143,10 @@ h1 {
     flex-direction: column;
     padding: 10px;
 }
+
+/* Style the form to stretch across the available space */
+#mainChatArea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
