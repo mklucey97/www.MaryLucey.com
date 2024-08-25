@@ -119,16 +119,15 @@ input[type="password"] {
 
 /* Apply a linear gradient background */
 body {
-    background: linear-gradient(90deg, red 50%, blue 50%);
+    background: linear-gradient(to bottom, red 50%, blue 50%);
     font-family: 'Comic Sans MS', sans-serif;
     font-size: 24px;
     color: limegreen;
     margin: 0;
     padding: 0;
+    height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Full viewport height */
-    box-sizing: border-box;
 }
 
 /* Style the main chat room heading */
@@ -136,12 +135,13 @@ h1 {
     text-align: center;
     margin: 0;
     padding: 10px;
+    flex-shrink: 0;
 }
 
 /* Container for chat and online users */
 #chatContainer {
     display: flex;
-    height: 60%; /* Adjust to take up part of the page */
+    flex: 1; /* Take up remaining space */
     width: 100%;
 }
 
@@ -152,6 +152,7 @@ h1 {
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
+    height: 100%;
 }
 
 /* Online users interface */
@@ -161,6 +162,7 @@ h1 {
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
+    height: 100%;
 }
 
 /* Custom scrollbar for online users */
@@ -176,9 +178,9 @@ h1 {
 #messageArea {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     width: 100%; /* Full width */
-    height: 40%; /* Adjust to take up the remaining part of the page */
+    height: auto;
+    flex-shrink: 0;
     box-sizing: border-box;
 }
 
@@ -186,7 +188,6 @@ h1 {
 #mainChatArea {
     display: flex;
     flex-direction: column;
-    height: 100%; /* Full height */
     width: 100%; /* Full width */
     box-sizing: border-box;
 }
@@ -218,11 +219,6 @@ h1 {
     height: 20%; /* Adjusted to take up remaining vertical space */
 }
 
-/* Ensure the send button does not shrink */
-#sendBtn {
-    flex-shrink: 0;
-}
-
 /* Add responsive adjustments for larger screens */
 @media (min-width: 768px) {
     #messageInput {
@@ -233,4 +229,3 @@ h1 {
         font-size: 28px;
     }
 }
-
