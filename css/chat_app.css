@@ -116,6 +116,7 @@ input[type="password"] {
     background-color: #00ffff; /* Slightly darker cyan on hover */
 }
 
+/* chat_app.css */
 
 /* Apply a linear gradient background */
 body {
@@ -179,7 +180,6 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 100%; /* Full width */
-    height: auto;
     flex-shrink: 0;
     box-sizing: border-box;
 }
@@ -189,6 +189,7 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 100%; /* Full width */
+    height: 100%;
     box-sizing: border-box;
 }
 
@@ -203,7 +204,7 @@ h1 {
     box-sizing: border-box;
     resize: none;
     width: 100%;
-    height: 80%; /* Adjusted to take up most of the height */
+    height: calc(100vh - 140px); /* Dynamically adjust height based on the viewport */
 }
 
 /* Style the send button to stretch across horizontally */
@@ -216,7 +217,7 @@ h1 {
     cursor: pointer;
     width: 100%;
     box-sizing: border-box;
-    height: 20%; /* Adjusted to take up remaining vertical space */
+    height: 60px; /* Fixed height */
 }
 
 /* Add responsive adjustments for larger screens */
@@ -229,3 +230,4 @@ h1 {
         font-size: 28px;
     }
 }
+
