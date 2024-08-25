@@ -117,8 +117,6 @@ input[type="password"] {
 }
 
 
-/* chat_app.css */
-
 /* Apply a linear gradient background */
 body {
     background: linear-gradient(90deg, red 50%, blue 50%);
@@ -127,9 +125,9 @@ body {
     color: limegreen;
     margin: 0;
     padding: 0;
-    height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
+    height: 100vh; /* Full viewport height */
     box-sizing: border-box;
 }
 
@@ -138,15 +136,49 @@ h1 {
     text-align: center;
     margin: 0;
     padding: 10px;
-    flex-shrink: 0; /* Ensure the heading doesn't shrink */
 }
 
-/* Ensure the message area takes up the full remaining space */
+/* Container for chat and online users */
+#chatContainer {
+    display: flex;
+    height: 60%; /* Adjust to take up part of the page */
+    width: 100%;
+}
+
+/* Chat messages interface */
+#chatMessages {
+    flex: 3;
+    background-color: #dc143c;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Online users interface */
+#onlineUsers {
+    flex: 1;
+    background-color: #dc143c;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Custom scrollbar for online users */
+#onlineUsers::-webkit-scrollbar {
+    width: 10px;
+}
+
+#onlineUsers::-webkit-scrollbar-thumb {
+    background-color: cyan;
+}
+
+/* Style the message area to take up full space */
 #messageArea {
-    flex: 1; /* Allow the message area to grow and fill the space */
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     width: 100%; /* Full width */
+    height: 40%; /* Adjust to take up the remaining part of the page */
     box-sizing: border-box;
 }
 
@@ -161,7 +193,7 @@ h1 {
 
 /* Style the text area to take up most of the vertical space */
 #messageInput {
-    flex: 1; /* Grow to fill available space */
+    flex-grow: 1;
     background-color: #dc143c;
     color: limegreen;
     border: none;
@@ -170,6 +202,7 @@ h1 {
     box-sizing: border-box;
     resize: none;
     width: 100%;
+    height: 80%; /* Adjusted to take up most of the height */
 }
 
 /* Style the send button to stretch across horizontally */
@@ -182,8 +215,12 @@ h1 {
     cursor: pointer;
     width: 100%;
     box-sizing: border-box;
-    height: 60px; /* Fixed height to ensure the button doesn't shrink too much */
-    flex-shrink: 0; /* Prevent the button from shrinking */
+    height: 20%; /* Adjusted to take up remaining vertical space */
+}
+
+/* Ensure the send button does not shrink */
+#sendBtn {
+    flex-shrink: 0;
 }
 
 /* Add responsive adjustments for larger screens */
@@ -194,6 +231,6 @@ h1 {
 
     #sendBtn {
         font-size: 28px;
-        height: 70px; /* Adjust button height for larger screens */
     }
 }
+
