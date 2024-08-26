@@ -116,8 +116,6 @@ input[type="password"] {
     background-color: #00ffff; /* Slightly darker cyan on hover */
 }
 
-/* chat_app.css */
-
 /* Apply a linear gradient background */
 body {
     background: linear-gradient(to bottom, red 50%, blue 50%);
@@ -126,7 +124,7 @@ body {
     color: limegreen;
     margin: 0;
     padding: 0;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -142,8 +140,9 @@ h1 {
 /* Container for chat and online users */
 #chatContainer {
     display: flex;
-    flex: 1; /* Take up remaining space */
+    flex: 1;
     width: 100%;
+    height: calc(100vh - 200px); /* Adjust height to leave space for the message area */
 }
 
 /* Chat messages interface */
@@ -153,7 +152,6 @@ h1 {
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
-    height: 100%;
 }
 
 /* Online users interface */
@@ -163,7 +161,6 @@ h1 {
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
-    height: 100%;
 }
 
 /* Custom scrollbar for online users */
@@ -177,18 +174,14 @@ h1 {
 
 /* Style the message area to take up full space */
 #messageArea {
-    display: flex;
-    flex-direction: column;
-    width: 100%; /* Full width */
-    flex-shrink: 0;
+    width: 100%;
     box-sizing: border-box;
 }
 
 /* Style the form to take up full space of its container */
 #mainChatArea {
     display: flex;
-    flex-direction: column;
-    width: 100%; /* Full width */
+    width: 100%;
     height: 100%;
     box-sizing: border-box;
 }
@@ -204,7 +197,7 @@ h1 {
     box-sizing: border-box;
     resize: none;
     width: 100%;
-    height: calc(100vh - 140px); /* Dynamically adjust height based on the viewport */
+    height: calc(100vh - 260px); /* Adjust height based on the viewport and other elements */
 }
 
 /* Style the send button to stretch across horizontally */
@@ -216,8 +209,8 @@ h1 {
     font-size: 24px;
     cursor: pointer;
     width: 100%;
+    height: 60px; /* Fixed height for the button */
     box-sizing: border-box;
-    height: 60px; /* Fixed height */
 }
 
 /* Add responsive adjustments for larger screens */
@@ -230,4 +223,3 @@ h1 {
         font-size: 28px;
     }
 }
-
