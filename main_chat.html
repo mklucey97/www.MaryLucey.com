@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Your Key Words Here">
     <meta name="description" content="Your Description Here">
-    <meta name="Author" content="Your Name Here">
+    <meta name="author" content="Your Name Here">
     <title>Main Chat</title>
     <link rel="stylesheet" href="css/chat_app.css">
 </head>
@@ -19,10 +19,11 @@
             <!-- List of online users will be displayed here -->
         </div>
     </div>
+    <!-- Message area container -->
     <div id="messageArea">
         <form id="mainChatArea" action="main_chat.php" method="post">
             <textarea id="messageInput" placeholder="Type your message here" maxlength="5000000"></textarea>
-            <button id="sendBtn">Send</button>
+            <button type="submit" id="sendBtn">Send</button>
         </form>
     </div>
 
