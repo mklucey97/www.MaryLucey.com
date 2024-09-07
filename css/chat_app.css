@@ -116,8 +116,6 @@ input[type="password"] {
     background-color: #00ffff; /* Slightly darker cyan on hover */
 }
 
-/* chat_app.css */
-
 /* Apply a linear gradient background */
 body {
     background: linear-gradient(to bottom, red 50%, blue 50%);
@@ -144,7 +142,7 @@ h1 {
     display: flex;
     flex: 1;
     width: 100%;
-    height: calc(100vh - 80px); /* Subtracting height of heading */
+    height: calc(100vh - 160px); /* Subtracting height of header and message area */
     box-sizing: border-box;
 }
 
@@ -175,23 +173,20 @@ h1 {
     background-color: cyan;
 }
 
-/* chat_app.css */
-
-/* Style the message area to take up full space */
+/* Style the message area to take up full width */
 #messageArea {
     display: flex;
     width: 100%;
-    height: calc(100vh - 80px); /* Full height minus the height of the header */
     box-sizing: border-box;
 }
 
-/* Style the form to take up full space of its container */
+/* Style the form to take up full width */
 #mainChatArea {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
     box-sizing: border-box;
+    align-items: stretch;
 }
 
 /* Style the text area */
@@ -204,8 +199,7 @@ h1 {
     font-size: 24px;
     box-sizing: border-box;
     resize: none;
-    height: 100%; /* Make the text area occupy full height */
-    width: 80%; /* Stretch the text area across most of the available space */
+    height: 60px; /* Adjust the height for a better look */
 }
 
 /* Style the send button */
@@ -216,7 +210,6 @@ h1 {
     padding: 20px;
     font-size: 24px;
     cursor: pointer;
-    width: 20%; /* Use the remaining 20% of the width */
-    height: 100%; /* Make the button occupy full height */
     box-sizing: border-box;
+    height: 60px; /* Same height as the message input */
 }
