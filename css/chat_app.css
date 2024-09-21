@@ -129,7 +129,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Spacing for header, chat, and message area */
+    justify-content: flex-start;
     height: 100vh;
 }
 
@@ -144,9 +144,8 @@ h1 {
 /* Container for chat and online users */
 #chatContainer {
     display: flex;
-    flex: 1;
     width: 100%;
-    height: calc(100vh - 160px); /* Subtract height of header and message area */
+    height: 50%; /* Takes 50% of the screen height (red background part) */
     box-sizing: border-box;
 }
 
@@ -181,8 +180,7 @@ h1 {
 #messageArea {
     display: flex;
     width: 100%;
-    height: auto; /* Allow it to grow based on content */
-    flex-shrink: 0;
+    height: 50%; /* Takes up the remaining 50% of the page (blue background part) */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -220,6 +218,6 @@ h1 {
     font-size: 24px;
     cursor: pointer;
     width: 150px; /* Fixed width for the send button */
-    height: 100%;
+    height: 100%; /* Takes up the full height of the message area */
     box-sizing: border-box;
 }
