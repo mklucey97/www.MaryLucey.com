@@ -117,8 +117,6 @@ input[type="password"] {
 }
 
 
-/* chat_app.css */
-
 /* Apply a linear gradient background */
 body {
     background: linear-gradient(to bottom, red 50%, blue 50%);
@@ -184,6 +182,7 @@ h1 {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    align-items: stretch; /* Ensure the content stretches */
 }
 
 /* Style the form to take up full width */
@@ -193,6 +192,7 @@ h1 {
     height: 100%;
     box-sizing: border-box;
     align-items: stretch;
+    justify-content: space-between; /* Ensure button and input are spaced */
 }
 
 /* Style the text area */
@@ -206,7 +206,7 @@ h1 {
     box-sizing: border-box;
     resize: none;
     height: 100%;
-    width: calc(100% - 150px); /* Full width minus space for the send button */
+    width: auto; /* Allow input to take full remaining width */
 }
 
 /* Style the send button */
@@ -220,4 +220,5 @@ h1 {
     width: 150px; /* Fixed width for the send button */
     height: 100%; /* Takes up the full height of the message area */
     box-sizing: border-box;
+    flex-shrink: 0; /* Prevents shrinking of the button */
 }
