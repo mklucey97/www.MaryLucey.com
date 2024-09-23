@@ -116,7 +116,6 @@ input[type="password"] {
     background-color: #00ffff; /* Slightly darker cyan on hover */
 }
 
-
 /* Apply a linear gradient background */
 body {
     background: linear-gradient(to bottom, red 50%, blue 50%);
@@ -206,7 +205,7 @@ h1 {
     box-sizing: border-box;
     resize: none;
     height: 100%;
-    width: 100%; /* Allow input to take full width */
+    width: 100%; /* Ensure input fills remaining space */
 }
 
 /* Style the send button */
@@ -217,7 +216,7 @@ h1 {
     padding: 20px;
     font-size: 24px;
     cursor: pointer;
-    width: auto; /* Send button width will adjust based on content */
+    width: auto;
     height: 100%; /* Takes up the full height of the message area */
     box-sizing: border-box;
     flex-shrink: 0;
