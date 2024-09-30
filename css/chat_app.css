@@ -172,6 +172,13 @@ h1 {
 #onlineUsers::-webkit-scrollbar-thumb {
     background-color: cyan;
 }
+/* Style for the form */
+form {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 /* Style the message area to take up remaining space */
 #messageArea {
     display: flex;
@@ -195,7 +202,7 @@ h1 {
 
 /* Style the text area */
 #messageInput {
-    flex-grow: 10; /* Allow the textarea to grow larger */
+    flex-grow: 9; /* Larger textarea */
     background-color: #dc143c;
     color: limegreen;
     border: none;
@@ -208,7 +215,7 @@ h1 {
 
 /* Style the send button */
 #sendBtn {
-    flex-grow: 1; /* Set the button to take a smaller portion of the space */
+    flex-grow: 1; /* Smaller send button */
     background-color: cyan;
     color: limegreen;
     border: none;
