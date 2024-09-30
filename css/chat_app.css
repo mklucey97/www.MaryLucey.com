@@ -116,6 +116,8 @@ input[type="password"] {
     background-color: #00ffff; /* Slightly darker cyan on hover */
 }
 
+/* chat_app.css */
+
 /* Apply a linear gradient background */
 body {
     background: linear-gradient(to bottom, red 50%, blue 50%);
@@ -172,12 +174,6 @@ h1 {
 #onlineUsers::-webkit-scrollbar-thumb {
     background-color: cyan;
 }
-/* Style for the form */
-form {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
 
 /* Style the message area to take up remaining space */
 #messageArea {
@@ -187,7 +183,8 @@ form {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    align-items: stretch; /* Ensure the content stretches */
+    align-items: stretch;
+    justify-content: flex-start;
 }
 
 /* Style the form to take up full width */
