@@ -115,6 +115,7 @@ input[type="password"] {
 #loginBtn:hover {
     background-color: #00ffff; /* Slightly darker cyan on hover */
 }
+
 /* Apply a linear gradient background */
 body {
     background: linear-gradient(to bottom, red 50%, blue 50%);
@@ -136,7 +137,7 @@ h1 {
     flex-shrink: 0;
 }
 
-/* Container for chat and online users */
+/* Container for chat messages and online users */
 #chatContainer {
     display: flex;
     width: 100%;
@@ -146,7 +147,7 @@ h1 {
 
 /* Chat messages interface */
 #chatMessages {
-    flex: 2;
+    flex: 3; /* Give more space to chat messages */
     background-color: #dc143c;
     padding: 20px;
     box-sizing: border-box;
@@ -155,13 +156,11 @@ h1 {
 
 /* Online users interface */
 #onlineUsers {
-    flex: 1;
+    flex: 1; /* Take up less space than messages */
     background-color: #dc143c;
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
-    display: flex;
-    flex-direction: column;
 }
 
 /* Custom scrollbar for online users */
@@ -173,15 +172,14 @@ h1 {
     background-color: cyan;
 }
 
-/* Style the message area to take up the remaining space */
+/* Style the message area to take up the remaining blue space */
 #messageArea {
     display: flex;
     width: 100%;
     height: 50%; /* Takes up the remaining 50% (blue background part) */
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    flex-grow: 1;
+    box-sizing: border-box;
 }
 
 /* Style the form to take up full width and height */
