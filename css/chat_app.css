@@ -160,6 +160,8 @@ h1 {
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Custom scrollbar for online users */
