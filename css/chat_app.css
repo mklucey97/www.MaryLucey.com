@@ -60,63 +60,6 @@ input[type="email"] {
     margin-top: 20px;
     font-size: 18px;
 }
-/* chat_app.css */
-
-/* Apply a linear gradient background */
-body {
-    background: linear-gradient(to bottom, red 50%, blue 50%);
-    font-family: 'Comic Sans MS', sans-serif;
-    font-size: 24px;
-    color: limegreen;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Style for the form */
-form {
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-/* Style for the input fields */
-input[type="text"], 
-input[type="password"] {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    box-sizing: border-box;
-    background-color: #dc143c;
-    border: none;
-    border-radius: 5px;
-    color: limegreen;
-    font-size: 18px;
-}
-
-/* Style for the login button */
-#loginBtn {
-    width: 100%;
-    padding: 15px;
-    background-color: cyan;
-    border: none;
-    border-radius: 5px;
-    color: limegreen;
-    font-size: 24px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#loginBtn:hover {
-    background-color: #00ffff; /* Slightly darker cyan on hover */
-}
-/* chat_app.css */
-
 /* Apply a linear gradient background */
 body {
     background: linear-gradient(to bottom, red 50%, blue 50%);
@@ -148,7 +91,7 @@ h1 {
 
 /* Sidebar with friends list */
 .sidebar {
-    flex: 1; /* Space for sidebar */
+    flex: 1;
     background-color: #dc143c;
     padding: 20px;
     box-sizing: border-box;
@@ -156,7 +99,7 @@ h1 {
 
 /* Main section with message area */
 .main {
-    flex: 2; /* Allocates more space for chat messages */
+    flex: 2;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -166,7 +109,7 @@ h1 {
 .message-list {
     background-color: #dc143c;
     padding: 20px;
-    flex-grow: 1; /* Takes remaining space */
+    flex-grow: 1;
     overflow-y: auto;
 }
 
@@ -187,7 +130,7 @@ h1 {
 
 /* Style the text area */
 #messageInput {
-    flex-grow: 9; /* Enlarges text area */
+    flex-grow: 9;
     background-color: #dc143c;
     color: limegreen;
     border: none;
@@ -199,8 +142,8 @@ h1 {
 
 /* Style the send button */
 #sendBtn {
-    flex-grow: 1; /* Proportionally smaller */
-    background-color: #082a73;
+    flex-grow: 1;
+    background-color: cyan; /* Updated background color to cyan */
     color: limegreen;
     border: none;
     padding: 20px;
@@ -220,10 +163,10 @@ h1 {
 }
 
 /* Custom scrollbar for friends list */
-.friends-list::-webkit-scrollbar {
+.onlineusers-list::-webkit-scrollbar {
     width: 10px;
 }
 
-.friends-list::-webkit-scrollbar-thumb {
+.onlineusers-list::-webkit-scrollbar-thumb {
     background-color: cyan;
 }
