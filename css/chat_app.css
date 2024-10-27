@@ -91,7 +91,7 @@ h1 {
 
 /* Sidebar with friends list */
 .sidebar {
-    flex: 1;
+    width: 25%;
     background-color: #dc143c;
     padding: 20px;
     box-sizing: border-box;
@@ -99,7 +99,7 @@ h1 {
 
 /* Main section with message area */
 .main {
-    flex: 2;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -117,7 +117,6 @@ h1 {
 .message-form {
     display: flex;
     width: 100%;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -126,27 +125,30 @@ h1 {
     display: flex;
     width: 100%;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 /* Style the text area */
 #messageInput {
-    flex-grow: 9;
+    flex-grow: 8;
     background-color: #dc143c;
     color: limegreen;
     border: none;
-    padding: 20px;
+    padding: 15px;
     font-size: 24px;
     box-sizing: border-box;
     resize: none;
+    width: 100%;
 }
 
 /* Style the send button */
 #sendBtn {
     flex-grow: 1;
-    background-color: cyan; /* Updated background color to cyan */
+    background-color: cyan;
     color: limegreen;
     border: none;
-    padding: 20px;
+    padding: 15px;
     font-size: 24px;
     cursor: pointer;
     height: 100%;
