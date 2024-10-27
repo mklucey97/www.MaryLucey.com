@@ -60,8 +60,6 @@ input[type="email"] {
     margin-top: 20px;
     font-size: 18px;
 }
-/* chat_app.css */
-
 /* Apply a linear gradient background */
 body {
     background: linear-gradient(to bottom, red 50%, blue 50%);
@@ -132,8 +130,7 @@ h1 {
 
 /* Style the text area */
 #messageInput {
-    flex-grow: 8;
-    flex-basis: 100%;
+    flex-grow: 1;
     background-color: #dc143c;
     color: limegreen;
     border: none;
@@ -141,18 +138,18 @@ h1 {
     font-size: 24px;
     box-sizing: border-box;
     resize: none;
-    width: 100%;
+    height: 100%;
 }
 
 /* Style the send button */
 #sendBtn {
-    flex-grow: 1;
     background-color: cyan;
     color: limegreen;
     border: none;
     padding: 15px;
     font-size: 24px;
     cursor: pointer;
+    flex-shrink: 0;
     height: 100%;
     box-sizing: border-box;
 }
