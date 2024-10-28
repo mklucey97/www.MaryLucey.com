@@ -60,6 +60,8 @@ input[type="email"] {
     margin-top: 20px;
     font-size: 18px;
 }
+/* chat_app.css */
+
 /* Apply a linear gradient background */
 body {
     background: linear-gradient(to bottom, red 50%, blue 50%);
@@ -70,6 +72,8 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     overflow: hidden; /* Ensure content stays within viewport */
 }
@@ -121,11 +125,11 @@ h1 {
 .message-form {
     display: flex;
     width: 100%;
-    height: auto; /* Allow to fit content */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    flex-shrink: 0; /* Prevent shrinking */
+    flex-grow: 1; /* Adjust to take all remaining space */
+    height: auto;
 }
 
 /* Style the main chat form to fill available space */
@@ -134,6 +138,7 @@ h1 {
     width: 100%;
     padding: 0;
     margin: 0;
+    height: 100%; /* Ensure it covers remaining height */
 }
 
 /* Style the text area */
@@ -146,6 +151,7 @@ h1 {
     font-size: 24px;
     box-sizing: border-box;
     resize: none;
+    height: 100%; /* Make it fully cover available space */
 }
 
 /* Style the send button */
@@ -158,6 +164,7 @@ h1 {
     font-size: 24px;
     cursor: pointer;
     box-sizing: border-box;
+    height: 100%; /* Ensure it covers remaining height */
 }
 
 /* Custom scrollbar for message list */
@@ -177,4 +184,3 @@ h1 {
 .onlineusers-list::-webkit-scrollbar-thumb {
     background-color: cyan;
 }
-
