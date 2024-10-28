@@ -71,6 +71,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    overflow: hidden; /* Ensure content stays within viewport */
 }
 
 /* Style the main chat room heading */
@@ -95,6 +96,7 @@ h1 {
     background-color: #dc143c;
     padding: 20px;
     box-sizing: border-box;
+    overflow-y: auto; /* Allow scrolling if sidebar overflows */
 }
 
 /* Main section with message area */
@@ -103,6 +105,8 @@ h1 {
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 /* Message list interface */
@@ -116,10 +120,12 @@ h1 {
 /* Message area */
 .message-form {
     display: flex;
-    flex-basis: auto;
     width: 100%;
+    height: auto; /* Allow to fit content */
     box-sizing: border-box;
-    height: 100%; /* Take up remaining height */
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 /* Style the main chat form to fill available space */
@@ -140,7 +146,6 @@ h1 {
     font-size: 24px;
     box-sizing: border-box;
     resize: none;
-    width: 100%;
 }
 
 /* Style the send button */
@@ -153,7 +158,6 @@ h1 {
     font-size: 24px;
     cursor: pointer;
     box-sizing: border-box;
-    height: 100%; /* Full height to cover blue area */
 }
 
 /* Custom scrollbar for message list */
@@ -173,3 +177,4 @@ h1 {
 .onlineusers-list::-webkit-scrollbar-thumb {
     background-color: cyan;
 }
+
