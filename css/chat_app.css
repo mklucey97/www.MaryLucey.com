@@ -116,8 +116,10 @@ h1 {
 /* Message area */
 .message-form {
     display: flex;
+    flex-basis: auto;
     width: 100%;
     box-sizing: border-box;
+    height: 100%; /* Take up remaining height */
 }
 
 /* Style the main chat form to fill available space */
@@ -130,7 +132,7 @@ h1 {
 
 /* Style the text area */
 #messageInput {
-    flex-grow: 1;
+    flex-grow: 8; /* Adjust to take most of the space */
     background-color: #dc143c;
     color: limegreen;
     border: none;
@@ -138,20 +140,20 @@ h1 {
     font-size: 24px;
     box-sizing: border-box;
     resize: none;
-    height: 100%;
+    width: 100%;
 }
 
 /* Style the send button */
 #sendBtn {
+    flex-grow: 2; /* Increase flex-grow for a larger button */
     background-color: cyan;
     color: limegreen;
     border: none;
     padding: 15px;
     font-size: 24px;
     cursor: pointer;
-    flex-shrink: 0;
-    height: 100%;
     box-sizing: border-box;
+    height: 100%; /* Full height to cover blue area */
 }
 
 /* Custom scrollbar for message list */
