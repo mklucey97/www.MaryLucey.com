@@ -126,7 +126,6 @@ h1 {
     width: 100%;
     box-sizing: border-box;
     padding: 0;
-    height: auto;
 }
 
 /* Style the main chat form to fill available space */
@@ -138,7 +137,7 @@ h1 {
 
 /* Style the text area */
 #messageInput {
-    flex-grow: 8;
+    flex-grow: 10; /* Take up most of the available space */
     background-color: #dc143c;
     color: limegreen;
     border: none;
@@ -146,12 +145,12 @@ h1 {
     font-size: 24px;
     box-sizing: border-box;
     resize: none;
-    height: 100%; /* Covers remaining height */
+    height: auto; /* Adjust height as needed */
 }
 
 /* Style the send button */
 #sendBtn {
-    flex-grow: 1; /* Slightly smaller than the text area */
+    flex-grow: 1; /* Slightly smaller to allow more space for the input */
     background-color: cyan;
     color: limegreen;
     border: none;
@@ -159,7 +158,7 @@ h1 {
     font-size: 24px;
     cursor: pointer;
     box-sizing: border-box;
-    height: 100%;
+    height: auto;
 }
 
 /* Custom scrollbar for message list */
