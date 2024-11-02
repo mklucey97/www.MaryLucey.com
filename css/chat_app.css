@@ -75,7 +75,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden; /* Ensure content stays within viewport */
+    overflow: hidden;
 }
 
 /* Style the main chat room heading */
@@ -100,7 +100,7 @@ h1 {
     background-color: #dc143c;
     padding: 20px;
     box-sizing: border-box;
-    overflow-y: auto; /* Allow scrolling if sidebar overflows */
+    overflow-y: auto;
 }
 
 /* Main section with message area */
@@ -110,7 +110,6 @@ h1 {
     flex-direction: column;
     height: 100%;
     padding: 0;
-    margin: 0;
 }
 
 /* Message list interface */
@@ -126,9 +125,7 @@ h1 {
     display: flex;
     width: 100%;
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
-    flex-grow: 1; /* Adjust to take all remaining space */
     height: auto;
 }
 
@@ -136,14 +133,12 @@ h1 {
 #mainChatArea {
     display: flex;
     width: 100%;
-    padding: 0;
     margin: 0;
-    height: 100%; /* Ensure it covers remaining height */
 }
 
 /* Style the text area */
 #messageInput {
-    flex-grow: 8; /* Adjust to take most of the space */
+    flex-grow: 8;
     background-color: #dc143c;
     color: limegreen;
     border: none;
@@ -151,12 +146,12 @@ h1 {
     font-size: 24px;
     box-sizing: border-box;
     resize: none;
-    height: 100%; /* Make it fully cover available space */
+    height: 100%; /* Covers remaining height */
 }
 
 /* Style the send button */
 #sendBtn {
-    flex-grow: 2; /* Increase flex-grow for a larger button */
+    flex-grow: 1; /* Slightly smaller than the text area */
     background-color: cyan;
     color: limegreen;
     border: none;
@@ -164,7 +159,7 @@ h1 {
     font-size: 24px;
     cursor: pointer;
     box-sizing: border-box;
-    height: 100%; /* Ensure it covers remaining height */
+    height: 100%;
 }
 
 /* Custom scrollbar for message list */
