@@ -173,13 +173,56 @@ h1 {
 .onlineusers-list::-webkit-scrollbar-thumb {
     background-color: cyan;
 }
+/* chat_app.css */
+
+/* Chat window styling */
 .chat-window {
     width: 100%;
+    max-width: 400px; /* Adjust to control the width of the chat window */
     height: 300px; /* Adjust height as needed */
     border: 2px solid #fff; /* White border */
     background-color: #dc143c; /* Background color */
     overflow-y: auto; /* Scrollable if messages exceed the window size */
     margin-bottom: 10px; /* Space between the chat window and message area */
     padding: 10px;
+    color: limegreen;
     box-sizing: border-box; /* Ensures padding doesn’t affect total width */
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #dc143c;
+    color: limegreen;
+    border: none;
+    font-size: 18px;
+    box-sizing: border-box;
+    resize: none; /* Disable resizing */
+    margin-bottom: 10px; /* Space between textarea and send button */
+}
+
+/* Send button styling */
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: cyan;
+    color: limegreen;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Body styling */
+body {
+    background: linear-gradient(to bottom, red 50%, blue 50%);
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 24px;
+    color: limegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
