@@ -212,8 +212,9 @@ textarea {
     border: none;
     cursor: pointer;
 }
+/* chat_app.css */
 
-/* Apply a linear gradient background */
+/* General body styling */
 body {
     background: linear-gradient(to bottom, red 50%, blue 50%);
     font-family: 'Comic Sans MS', sans-serif;
@@ -221,10 +222,10 @@ body {
     color: limegreen;
     margin: 0;
     padding: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     overflow: hidden;
 }
 
@@ -234,21 +235,21 @@ body {
     flex-direction: column;
     width: 100%;
     max-width: 1000px;
-    height: 80vh; /* Adjust to use most of the viewport height */
+    height: 90vh; /* Take up most of the viewport height */
     box-sizing: border-box;
 }
 
 /* Chat window styling */
 .chat-window {
-    flex-grow: 1; /* Makes the chat window expand to fill available space */
+    flex-grow: 1;
     background-color: #dc143c;
     color: limegreen;
     padding: 10px;
     box-sizing: border-box;
-    overflow-y: auto; /* Enable scrolling if messages exceed window size */
+    overflow-y: auto;
     border: 2px solid #fff; /* White border */
     margin-bottom: 10px;
-    max-height: 70vh; /* Ensures the chat window doesn’t grow too large */
+    height: 100%; /* Ensure the chat window takes up the full available height */
 }
 
 /* Textarea styling */
@@ -260,10 +261,10 @@ textarea {
     box-sizing: border-box;
     padding: 15px;
     resize: none;
-    flex-shrink: 0;
-    min-height: 100px; /* Adjust height as needed */
+    min-height: 100px; /* Minimum height */
     margin-bottom: 10px;
     width: 100%;
+    flex-shrink: 0;
 }
 
 /* Send button styling */
