@@ -6,28 +6,24 @@
     <meta name="keywords" content="Your Key Words Here">
     <meta name="description" content="Your Description Here">
     <meta name="author" content="Your Name Here">
-
     <title>Private Chat</title>
     <link rel="stylesheet" href="css/chat_app.css">
 </head>
 <body>
-<div class="chat-popup" id="myForm">
-  <form action="private_chat.php" class="form-container" method="post">
-    <h1>Private Chat</h1>
-
-    <!-- Chat Window -->
-    <div class="chat-window">
-      <!-- Placeholder for messages -->
-    
+    <!-- Chat container, initially hidden -->
+    <div id="chat-container" class="chat-container">
+        <div class="chat-header">
+            <h3>Private Chat</h3>
+            <button id="close-chat-btn" class="close-chat-btn">&times;</button>
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <div class="chat-input-container">
+            <input id="user-input" class="chat-input" type="text" placeholder="Type your message...">
+            <button id="send-btn" class="send-btn">Send</button>
+        </div>
     </div>
-
-    <!-- Message Input Area -->
-    <textarea placeholder="Type your message here..." name="msg" required></textarea>
-    
-    <button type="submit" class="btn">Send</button>
-  </form>
-</div>
-<a href="main_chat.html">Rather chat with more than one person?</a>
-<script src="js/private_chat.js"></script>
+    <!-- Button to toggle the chat -->
+    <button id="toggle-chat-btn" class="toggle-chat-btn">Chat</button>
+    <script src="js/private_chat.js"></script>
 </body>
 </html>
