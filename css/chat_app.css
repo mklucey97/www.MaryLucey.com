@@ -230,62 +230,98 @@ body {
     align-items: center;
     overflow: hidden;
 }
-
-/* Style the form container */
-.form-container {
-    display: flex;
+/* Chat container styling */
+.chat-container {
+    display: none; /* Hidden by default */
     flex-direction: column;
     width: 100%;
-    max-width: 1000px;
-    height: 90vh; /* Take up most of the viewport height */
-    box-sizing: border-box;
-}
-
-/* Chat window styling */
-.chat-window {
-    flex-grow: 1;
+    max-width: 500px;
+    height: 70vh;
     background-color: #dc143c;
+    border: 2px solid white;
     color: limegreen;
     padding: 10px;
     box-sizing: border-box;
-    overflow-y: auto;
-    border: 2px solid #fff; /* White border */
-    margin-bottom: 10px;
-    height: 100%; /* Ensure the chat window takes up the full available height */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Textarea styling */
-textarea {
+.chat-container.visible {
+    display: flex; /* Show the chat when .visible is added */
+}
+
+/* Chat header styling */
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}
+
+.close-chat-btn {
+    background: none;
+    border: none;
+    color: limegreen;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Chat messages area */
+.chat-messages {
+    flex-grow: 1;
+    background-color: #dc143c;
+    padding: 10px;
+    overflow-y: auto;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+/* Chat input area styling */
+.chat-input-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.chat-input {
+    flex-grow: 1;
     background-color: #dc143c;
     color: limegreen;
     border: none;
+    padding: 10px;
     font-size: 24px;
     box-sizing: border-box;
-    padding: 15px;
-    resize: none;
-    min-height: 100px; /* Minimum height */
-    margin-bottom: 10px;
-    width: 100%;
-    flex-shrink: 0;
 }
 
-/* Send button styling */
-.btn {
+.send-btn {
     background-color: cyan;
     color: limegreen;
-    font-size: 24px;
     border: none;
-    padding: 15px;
+    padding: 10px 20px;
+    font-size: 24px;
     cursor: pointer;
-    flex-shrink: 0;
-    width: 100%;
 }
 
-/* Custom scrollbar styling for chat window */
-.chat-window::-webkit-scrollbar {
+/* Toggle chat button styling */
+.toggle-chat-btn {
+    background-color: cyan;
+    color: limegreen;
+    border: none;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Custom scrollbar for chat messages */
+.chat-messages::-webkit-scrollbar {
     width: 10px;
 }
 
-.chat-window::-webkit-scrollbar-thumb {
+.chat-messages::-webkit-scrollbar-thumb {
     background-color: cyan;
 }
