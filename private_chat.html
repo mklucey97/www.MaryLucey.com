@@ -7,7 +7,9 @@
     <meta name="description" content="Your Description Here">
     <meta name="author" content="Your Name Here">
     <title>Private Chat</title>
+	 <h1>Private Chat Room</h1>
     <link rel="stylesheet" href="css/chat_app.css">
+	
 </head>
 <body>
     <!-- Chat container, initially hidden -->
@@ -18,6 +20,7 @@
         </div>
         <div id="chat-messages" class="chat-messages"></div>
         <div class="chat-input-container">
+		  <form action="private_chat.php" class="form-container" method="post">
             <input id="user-input" class="chat-input" type="text" placeholder="Type your message...">
             <button id="send-btn" class="send-btn">Send</button>
         </div>
