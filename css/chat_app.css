@@ -230,6 +230,14 @@ body {
     align-items: center;
     overflow: hidden;
 }
+
+h1 {
+ font-family: 'Comic Sans MS', sans-serif;
+ font-size: 24px;
+ color: limegreen;
+text-align: center;
+	
+}
 /* Chat container styling */
 .chat-container {
     display: none; /* Hidden by default */
