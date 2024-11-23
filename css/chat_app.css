@@ -353,3 +353,9 @@ text-align: center;
 .chat-messages::-webkit-scrollbar-thumb {
     background-color: cyan;
 }
+h1 {
+font-family: 'Comic Sans MS', sans-serif;
+font-size: 24px;
+    color: limegreen;
+text-align:	center;
+}
