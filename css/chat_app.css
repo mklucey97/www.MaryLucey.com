@@ -55,6 +55,26 @@ input[type="email"] {
     background-color: #00ffff; /* Slightly darker cyan on hover */
 }
 
+/* Style for the login button */
+#loginBtn {
+    width: 100%;
+    padding: 15px; /* Makes the button larger */
+    background-color: cyan;
+    border: none;
+    border-radius: 5px;
+    color: limegreen;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#loginBtn:hover {
+    background-color: #00ffff; /* Slightly darker cyan on hover */
+}
+
+
 /* Style for the message div */
 #message {
     margin-top: 20px;
