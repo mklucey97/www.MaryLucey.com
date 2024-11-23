@@ -353,6 +353,13 @@ text-align: center;
 .chat-messages::-webkit-scrollbar-thumb {
     background-color: cyan;
 }
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1 {
 font-family: 'Comic Sans MS', sans-serif;
 font-size: 24px;
