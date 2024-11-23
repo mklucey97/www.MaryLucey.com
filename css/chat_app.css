@@ -374,3 +374,11 @@ font-size: 24px;
     color: limegreen;
 text-align:	center;
 }
+/* Container styles */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(220, 20, 60, 0.7); /* Semi-transparent to see gradient */
+  border-radius: 10px;
+}
