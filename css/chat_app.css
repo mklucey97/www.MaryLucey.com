@@ -412,3 +412,9 @@ input[type="submit"] {
 #message {
   margin-top: 20px;
 }
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
