@@ -451,3 +451,8 @@ textarea {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+
+input[type="file"] {
+  width: 100%;
+  margin-bottom: 20px;
+}
