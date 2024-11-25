@@ -418,3 +418,10 @@ input[type="submit"] {
   padding: 0;
   box-sizing: border-box;
 }
+/* Setting up background gradient */
+body {
+  background: linear-gradient(100% #dc143c, 50% #1667a1);
+  font-family: "Comic Sans MS", cursive;
+  color: limegreen;
+  font-size: 18px;
+}
