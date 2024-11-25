@@ -464,3 +464,11 @@ input[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
 }
+input[type="submit"]:hover {
+  background-color: darkgreen;
+}
+
+/* Message div */
+#message {
+  margin-top: 20px;
+}
