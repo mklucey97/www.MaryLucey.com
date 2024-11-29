@@ -452,38 +452,34 @@ label {
 }
 
 /* Input styles */
-input[type="text"],
-input[type="date"],
-select,
+/* Style for all input fields */
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="date"], 
+select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: #dc143c;
+    border: none;
+    border-radius: 5px;
+    color: limegreen;
+    font-size: 18px;
+}
+
+/* Style for the textarea */
 textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-input[type="file"] {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-/* Submit button styles */
-input[type="submit"] {
-  background-color: limegreen;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: darkgreen;
-}
-
-/* Message div */
-#message {
-  margin-top: 20px;
+    width: 100%;
+    height: 200px; /* Increase height for larger input area */
+    padding: 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: #dc143c;
+    border: none;
+    border-radius: 5px;
+    color: limegreen;
+    font-size: 18px;
+    resize: vertical; /* Allow resizing vertically if needed */
 }
