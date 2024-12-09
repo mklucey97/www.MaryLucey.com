@@ -1,6 +1,7 @@
 # Ignore all files except those with the specified extensions
-*
-!*/
+
+
+
 !*.html
 !*.css
 !*.js
@@ -9,10 +10,15 @@
 !*.png
 !*.gif
 
-# Ignore all directories except the specified ones
-images/
-js/
+
 
 # Unignore specific files
 !.gitignore
 !assets/jquery.min.js
+
+# Unignore specific directories
+
+!images/
+!assets/
+!css/
+!js/
